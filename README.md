@@ -59,66 +59,66 @@ Below is a curated table of leading enterprise SaaS platforms for AI safety eval
 
 The open-source AI safety ecosystem features battle-tested tools for automated red teaming, benchmark harness evaluation, and real-time safety guardrails.
 
-Below is the list of top open-source projects, sorted by **GitHub Star Count (Descending)**. Each star badge links directly to the stargazers page of the repository:
+Below is the list of top open-source projects, sorted by **GitHub Stars_Count (Descending)**. Each Stars_Badge links directly to the stargazers page of the repository:
 
 1. 🥇 **[promptfoo/promptfoo](https://github.com/promptfoo/promptfoo)**  
-   [![GitHub stars](https://img.shields.io/github/stars/promptfoo/promptfoo?style=social)](https://github.com/promptfoo/promptfoo/stargazers)  
+   [![GitHub_Stars](https://img.shields.io/github/stars/promptfoo/promptfoo?style=social)](https://github.com/promptfoo/promptfoo/stargazers)  
    *CLI and library for evaluating LLM outputs, red teaming, jailbreak testing, and CI/CD security gating.*
 
 2. 🥈 **[guidance-ai/guidance](https://github.com/guidance-ai/guidance)**  
-   [![GitHub stars](https://img.shields.io/github/stars/guidance-ai/guidance?style=social)](https://github.com/guidance-ai/guidance/stargazers)  
+   [![GitHub_Stars](https://img.shields.io/github/stars/guidance-ai/guidance?style=social)](https://github.com/guidance-ai/guidance/stargazers)  
    *Guidance language for controlling LLM generation, enforcing structured outputs, and preventing unwanted behavior.*
 
 3. 🥉 **[openai/evals](https://github.com/openai/evals)**  
-   [![GitHub stars](https://img.shields.io/github/stars/openai/evals?style=social)](https://github.com/openai/evals/stargazers)  
+   [![GitHub_Stars](https://img.shields.io/github/stars/openai/evals?style=social)](https://github.com/openai/evals/stargazers)  
    *OpenAI's official framework for evaluating LLMs and safety behaviors across standard benchmark suites.*
 
 4. 🏅 **[confident-ai/deepeval](https://github.com/confident-ai/deepeval)**  
-   [![GitHub stars](https://img.shields.io/github/stars/confident-ai/deepeval?style=social)](https://github.com/confident-ai/deepeval/stargazers)  
+   [![GitHub_Stars](https://img.shields.io/github/stars/confident-ai/deepeval?style=social)](https://github.com/confident-ai/deepeval/stargazers)  
    *The open-source LLM evaluation framework for measuring hallucination, toxicity, bias, and RAG safety metrics.*
 
 5. 🏅 **[explodinggradients/ragas](https://github.com/explodinggradients/ragas)**  
-   [![GitHub stars](https://img.shields.io/github/stars/explodinggradients/ragas?style=social)](https://github.com/explodinggradients/ragas/stargazers)  
+   [![GitHub_Stars](https://img.shields.io/github/stars/explodinggradients/ragas?style=social)](https://github.com/explodinggradients/ragas/stargazers)  
    *Framework for evaluating Retrieval Augmented Generation (RAG) pipelines for safety, context recall, and truthfulness.*
 
 6. 🏅 **[EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness)**  
-   [![GitHub stars](https://img.shields.io/github/stars/EleutherAI/lm-evaluation-harness?style=social)](https://github.com/EleutherAI/lm-evaluation-harness/stargazers)  
+   [![GitHub_Stars](https://img.shields.io/github/stars/EleutherAI/lm-evaluation-harness?style=social)](https://github.com/EleutherAI/lm-evaluation-harness/stargazers)  
    *Standardized benchmark harness for zero-shot and few-shot language model evaluations across 200+ safety & capability tasks.*
 
 7. 🏅 **[NVIDIA/garak](https://github.com/NVIDIA/garak)**  
-   [![GitHub stars](https://img.shields.io/github/stars/NVIDIA/garak?style=social)](https://github.com/NVIDIA/garak/stargazers)  
+   [![GitHub_Stars](https://img.shields.io/github/stars/NVIDIA/garak?style=social)](https://github.com/NVIDIA/garak/stargazers)  
    *NVIDIA's LLM vulnerability scanner—probes models for jailbreaks, prompt injection, data leakage, and toxic outputs.*
 
 8. 🏅 **[guardrails-ai/guardrails](https://github.com/guardrails-ai/guardrails)**  
-   [![GitHub stars](https://img.shields.io/github/stars/guardrails-ai/guardrails?style=social)](https://github.com/guardrails-ai/guardrails/stargazers)  
+   [![GitHub_Stars](https://img.shields.io/github/stars/guardrails-ai/guardrails?style=social)](https://github.com/guardrails-ai/guardrails/stargazers)  
    *Adding structure, type validation, and real-time safety guardrails to LLM applications.*
 
 9. 🏅 **[NVIDIA/NeMo-Guardrails](https://github.com/NVIDIA/NeMo-Guardrails)**  
-   [![GitHub stars](https://img.shields.io/github/stars/NVIDIA/NeMo-Guardrails?style=social)](https://github.com/NVIDIA/NeMo-Guardrails/stargazers)  
+   [![GitHub_Stars](https://img.shields.io/github/stars/NVIDIA/NeMo-Guardrails?style=social)](https://github.com/NVIDIA/NeMo-Guardrails/stargazers)  
    *Programmable toolkit for adding conversational guardrails, topic control, and safety policies to LLM applications.*
 
 10. 🏅 **[microsoft/PyRIT](https://github.com/microsoft/PyRIT)**  
-    [![GitHub stars](https://img.shields.io/github/stars/microsoft/PyRIT?style=social)](https://github.com/microsoft/PyRIT/stargazers)  
+    [![GitHub_Stars](https://img.shields.io/github/stars/microsoft/PyRIT?style=social)](https://github.com/microsoft/PyRIT/stargazers)  
     *Python Risk Identification Tool for Generative AI—Microsoft's open-source red-teaming framework for AI security.*
 
 11. 🏅 **[meta-llama/PurpleLlama](https://github.com/meta-llama/PurpleLlama)**  
-    [![GitHub stars](https://img.shields.io/github/stars/meta-llama/PurpleLlama?style=social)](https://github.com/meta-llama/PurpleLlama/stargazers)  
+    [![GitHub_Stars](https://img.shields.io/github/stars/meta-llama/PurpleLlama?style=social)](https://github.com/meta-llama/PurpleLlama/stargazers)  
     *Meta's cybersecurity evaluation tools, including Llama Guard and CyberSecEval for model trust and safety.*
 
 12. 🏅 **[protectai/llm-guard](https://github.com/protectai/llm-guard)**  
-    [![GitHub stars](https://img.shields.io/github/stars/protectai/llm-guard?style=social)](https://github.com/protectai/llm-guard/stargazers)  
+    [![GitHub_Stars](https://img.shields.io/github/stars/protectai/llm-guard?style=social)](https://github.com/protectai/llm-guard/stargazers)  
     *Security toolkit for LLM inputs and outputs, detecting prompt injections, PII leakage, and toxic content.*
 
 13. 🏅 **[stanford-crfm/helm](https://github.com/stanford-crfm/helm)**  
-    [![GitHub stars](https://img.shields.io/github/stars/stanford-crfm/helm?style=social)](https://github.com/stanford-crfm/helm/stargazers)  
+    [![GitHub_Stars](https://img.shields.io/github/stars/stanford-crfm/helm?style=social)](https://github.com/stanford-crfm/helm/stargazers)  
     *Holistic Evaluation of Language Models (HELM) by Stanford CRFM for multi-metric capability and safety assessment.*
 
 14. 🏅 **[UKGovernmentBEIS/inspect_ai](https://github.com/UKGovernmentBEIS/inspect_ai)**  
-    [![GitHub stars](https://img.shields.io/github/stars/UKGovernmentBEIS/inspect_ai?style=social)](https://github.com/UKGovernmentBEIS/inspect_ai/stargazers)  
+    [![GitHub_Stars](https://img.shields.io/github/stars/UKGovernmentBEIS/inspect_ai?style=social)](https://github.com/UKGovernmentBEIS/inspect_ai/stargazers)  
     *Inspect AI evaluation framework developed for large-scale safety research and AI safety institute evaluations.*
 
 15. 🏅 **[microsoft/promptbench](https://github.com/microsoft/promptbench)**  
-    [![GitHub stars](https://img.shields.io/github/stars/microsoft/promptbench?style=social)](https://github.com/microsoft/promptbench/stargazers)  
+    [![GitHub_Stars](https://img.shields.io/github/stars/microsoft/promptbench?style=social)](https://github.com/microsoft/promptbench/stargazers)  
     *Unified library for evaluating LLM robustness against prompt perturbations, adversarial attacks, and dynamic benchmarks.*
 
 ---
