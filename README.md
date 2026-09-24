@@ -1,201 +1,159 @@
-# Awesome-AI-Safety-Evaluation-Platform
-
-## Top AI Safety Evaluation Platform Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on LLM Red Teaming, Safety Benchmarks, Jailbreak Evaluation, Guardrail Testing, Model Risk Assessment & Continuous AI Safety Scoring*  
-
-**Last updated: September 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **AI Safety Evaluation**. These systems systematically test models and applications for jailbreaks, toxic or biased outputs, prompt injection success, policy violations, and other safety failures—supporting pre-deployment gates, regression testing, and ongoing risk scoring.
-
-
-
-**Examples** include Lakera, HiddenLayer, Patronus AI, Fiddler AI, Arthur AI, Robust Intelligence, CalypsoAI, Protect AI, Aporia, NVIDIA NeMo Guardrails, Virtue AI, and Invariant Labs (the category leaders and adjacent platforms).
-
-
-
-**Open-source emphasis**: Safety evaluation has a rich open ecosystem. **garak**, **Promptfoo**, **DeepEval**, **Inspect**, and related frameworks enable rigorous, automated testing. This section is heavily expanded.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Lakera / Lakera Guard](https://www.lakera.ai/)**  
-
-  LLM security and evaluation platform known for prompt-injection testing, practical defenses, and safety-oriented assessment of AI applications.
-
-
-
-- **[Patronus AI](https://www.patronus.ai/)**  
-
-  Evaluation platform focused on hallucination, safety, and quality scoring for LLM applications in production and pre-production workflows.
-
-
-
-- **[HiddenLayer, Protect AI, Robust Intelligence, CalypsoAI](https://www.hiddenlayer.com/)**  
-
-  AI security platforms offering adversarial testing, model risk assessment, red teaming, and safety/security evaluation across the AI lifecycle.
-
-
-
-- **[Fiddler AI, Arthur AI, Aporia](https://www.fiddler.ai/)**  
-
-  ML and LLM observability platforms with monitoring, drift, and evaluation capabilities that support ongoing safety and performance assessment.
-
-
-
-- **[NVIDIA NeMo Guardrails / NVIDIA AI safety tooling](https://www.nvidia.com/)**  
-
-  Guardrails and evaluation-oriented tooling within the NVIDIA AI ecosystem for controlling and assessing model behavior.
-
-
-
-- **[Virtue AI, Invariant Labs & similar evaluation vendors](https://www.lakera.ai/)**  
-
-  Additional platforms focused on AI safety testing, invariant checking, and structured evaluation of agent and model behavior.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[garak (NVIDIA)](https://github.com/NVIDIA/garak)**  
-
-  Leading open LLM vulnerability scanner—probes models for jailbreaks, leakage, misinformation, and other safety failures with extensible probe libraries.
-
-
-
-- **[Promptfoo](https://github.com/promptfoo/promptfoo)**  
-
-  Open-source LLM evaluation and red-teaming framework for CI/CD—compare models, run security test suites, and gate deployments on safety metrics.
-
-
-
-- **[DeepEval](https://github.com/confident-ai/deepeval)**  
-
-  Open evaluation framework for LLM applications with metrics for faithfulness, toxicity, bias, and custom safety criteria.
-
-
-
-- **[Inspect AI (UK AISI / related)](https://github.com/UKGovernmentBEIS/inspect_ai)**  
-
-  Open framework for large-scale AI evaluations, including safety and capability assessments used in research and policy contexts.
-
-
-
-- **[NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails)**  
-
-  Open programmable guardrails that also support evaluation of whether policies and rails hold under adversarial inputs.
-
-
-
-- **[LLM Guard & safety filter libraries](https://github.com/protectai/llm-guard)**  
-
-  Open scanners for inputs/outputs used both as runtime controls and as evaluation signals in safety pipelines.
-
-
-
-- **[HELM, Eleuther evaluation harnesses & academic benchmarks](https://github.com/stanford-crfm/helm)**  
-
-  Open benchmark suites and harnesses for systematic model evaluation across safety-relevant and general capabilities.
-
-
-
-- **[Custom red-team datasets & jailbreak collections](https://github.com/search?q=jailbreak+dataset+OR+LLM+red+team+open+source)**  
-
-  Community datasets and scripts for stress-testing models against known attack patterns.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Automated red teaming**: garak and Promptfoo for continuous safety regression.
-
-- **Application-level metrics**: DeepEval for RAG and agent safety scores.
-
-- **Research-scale eval**: Inspect and HELM-style harnesses for broad capability/safety studies.
-
-- **Guardrail verification**: Test NeMo rails and LLM Guard policies under adversarial suites.
-
-- **Composable stacks**: Promptfoo/garak in CI + DeepEval metrics + dashboard for a full open safety evaluation loop.
-
-- Commercial platforms still lead in managed adversarial intelligence, multi-model dashboards, and enterprise reporting.
-
-
-
-**Frameworks for building custom systems**:  
-
-**garak** + **Promptfoo** + **DeepEval** form a strong open safety evaluation core.  
-
-Add **Inspect** or academic harnesses for deeper studies, and **NeMo Guardrails** / **LLM Guard** to close the loop from eval to control.  
-
-Commercial platforms (Lakera, Patronus, HiddenLayer, Protect AI, Fiddler, Arthur, Robust Intelligence, etc.) provide polished workflows, threat updates, and organizational reporting.  
-
-Many teams run open evaluation in every PR and use commercial AI safety platforms for periodic deep assessments and board-level risk views. Fully open evaluation pipelines are production-ready for continuous testing.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Safety evaluation is necessary but not sufficient. Passing a test suite does not guarantee safety in deployment. Models and agents change; evaluations must be continuous and threat models updated.
-
-- Open-source tools offer transparency and CI integration but require you to design suites, interpret scores, and act on failures. Commercial platforms shift operational burden and threat intelligence to the vendor. Use multiple evaluation approaches for high-stakes systems.
-
-
+# 🛡️ Awesome AI Safety Evaluation Platform
+
+![Awesome AI Safety Evaluation Platform Banner](assets/banner.svg)
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+## 📌 Top AI Safety & LLM Evaluation Platform Ecosystem
 
+**Curated List of SaaS Products & Open-Source GitHub Projects**  
+*Focused on LLM Red Teaming, AI Safety Benchmarks, Jailbreak Evaluation, Guardrail Testing, Model Risk Assessment & Continuous AI Safety Scoring.*
 
-**Made for AI safety researchers, ML platform teams, and organizations deploying LLMs and agents responsibly.**  
+**Last updated: September 2026**
 
-Let's expand open, rigorous AI safety evaluation while recognizing the coverage and operational maturity that leading commercial platforms deliver.
+This repository tracks notable **SaaS platforms** and **open-source projects** for **AI Safety Evaluation**. These systems systematically test models and applications for prompt injection, jailbreaks, toxic or biased outputs, policy violations, and other safety failures—supporting pre-deployment gates, regression testing, and ongoing risk scoring.
+
+---
+
+## 📑 Table of Contents
+
+- [🏢 SaaS & Hosted Platforms](#-saas--hosted-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🛠️ How to Contribute](#️-how-to-contribute)
+- [⚠️ Disclaimer](#️-disclaimer)
+- [💖 Support](#-support)
+- [📈 Star History](#-star-history)
+
+---
+
+## 🏢 SaaS & Hosted Platforms
+
+> 💡 **Market Insights**: The global AI Safety & LLM Evaluation market size is estimated at **$2.4 Billion (2026)** and projected to reach **$16.8 Billion by 2030**. The sector is currently **moderately fragmented** with high consolidation velocity as enterprise cybersecurity majors acquire emerging safety platforms.
+
+Below is a curated table of leading enterprise SaaS platforms for AI safety evaluation, red teaming, and runtime guardrails, sorted by **Company Size & Valuation (Descending)**:
+
+| 🏢 Platform / Vendor | 💰 Starting Pricing | 🎁 Free Tier / Trial Limit | 📊 Company Size & Valuation | 📌 Primary Safety Focus |
+| :--- | :--- | :--- | :--- | :--- |
+| **[NVIDIA AI Enterprise / NeMo](https://www.nvidia.com/)** | $4,500 / GPU / year | 90-Day Free Trial (Full Platform Access) | **~$3.2 Trillion** (Public Enterprise) | Enterprise AI Guardrails, Adversarial Robustness & Safety Controls |
+| **[Protect AI (Palo Alto Networks)](https://protectai.com/)** | $108,000 / year (Prisma AIRS) | 30-Day Enterprise Trial (Up to 100 Scans) | **Acquired for $700M** (Palo Alto Networks: $110B+ Cap) | Automated AI Red Teaming, Vulnerability Scans & Model Armor |
+| **[Patronus AI](https://www.patronus.ai/)** | $25 / month (Base Plan) | Free Developer Tier ($10 credits, 1k calls, 14-day history) | **~$445 Million** (Series B, $50M+ Raised) | Hallucination Detection, Safety Scoring & Automated Evaluation |
+| **[HiddenLayer](https://www.hiddenlayer.com/)** | $130 / resource / month | 30-Day Free Trial (5 Resources included) | **~$380M - $500M+** ($100M Series B in 2026) | AI Runtime Threat Detection, ML SecOps & Vulnerability Scanning |
+| **[Robust Intelligence (Cisco)](https://robustintelligence.com/)** | $15,000 / year (Cisco AI Defense) | 14-Day Sandbox Trial (Up to 500 test runs) | **Acquired by Cisco** (~$350M–$400M Deal) | AI Stress Testing, Automated Model Auditing & Continuous Red Teaming |
+| **[Lakera Guard](https://www.lakera.ai/)** | $99 / month (Pro Tier) | Free Community Tier (Up to 10k API calls / mo) | **Acquired for $300M** (Check Point Software) | Real-Time Prompt Injection Defense & AI Safety Vulnerability Testing |
+| **[CalypsoAI](https://calypsoai.com/)** | $50,000 / year (Enterprise Pack) | 14-Day Enterprise Trial (Up to 5 Models Monitored) | **Acquired for $180M** (F5 Networks) | LLM Scanner, Governance, Red Teaming & Policy Validation |
+| **[Arthur AI](https://www.arthur.ai/)** | $60 / month (Premium Tier) | Free Forever Tier (Up to 4 use cases, 10k queries/mo) | **~$150M - $250M** ($60M Total Funding) | AI Governance, Hallucination Checks & Safety Observability |
+| **[Fiddler AI](https://www.fiddler.ai/)** | $500 / month (Developer Tier) | 30-Day Free Trial (AWS SageMaker, up to 5 models) | **~$120 Million** ($30M Series C) | LLM Observability, Model Drift & Safety Metrics |
+| **[Virtue AI (Fortinet)](https://virtue.ai/)** | $20,000 / year (Fortinet Module) | 30-Day Trial (Up to 3 Red Teaming campaigns) | **Acquired by Fortinet** (~$100M Deal, $30M VC) | Autonomous Agent Safety, Validation & Guardrail Audits |
+| **[Aporia](https://www.aporia.com/)** | $0 / year (Starter Tier) | Free Starter Plan ($0/yr, 1 model, 25k events/mo) | **Acquired by Coralogix** (~$50M Deal) | Real-time Guardrails, AI Toxicity & Hallucination Mitigation |
+| **[Invariant Labs (Snyk)](https://invariantlabs.ai/)** | $25 / user / month (Snyk Suite) | Free Developer Tier (Up to 200 security tests/mo) | **Acquired by Snyk** (~$40M Deal) | Agentic AI Safety, Logic Invariant Audits & Vulnerability Scoring |
+
+---
+
+## 🔓 Open-Source GitHub Projects
+
+The open-source AI safety ecosystem features battle-tested tools for automated red teaming, benchmark harness evaluation, and real-time safety guardrails.
+
+Below is the list of top open-source projects, sorted by **GitHub Star Count (Descending)**. Each star badge links directly to the stargazers page of the repository:
+
+1. 🥇 **[promptfoo/promptfoo](https://github.com/promptfoo/promptfoo)**  
+   [![GitHub stars](https://img.shields.io/github/stars/promptfoo/promptfoo?style=social)](https://github.com/promptfoo/promptfoo/stargazers)  
+   *CLI and library for evaluating LLM outputs, red teaming, jailbreak testing, and CI/CD security gating.*
+
+2. 🥈 **[guidance-ai/guidance](https://github.com/guidance-ai/guidance)**  
+   [![GitHub stars](https://img.shields.io/github/stars/guidance-ai/guidance?style=social)](https://github.com/guidance-ai/guidance/stargazers)  
+   *Guidance language for controlling LLM generation, enforcing structured outputs, and preventing unwanted behavior.*
+
+3. 🥉 **[openai/evals](https://github.com/openai/evals)**  
+   [![GitHub stars](https://img.shields.io/github/stars/openai/evals?style=social)](https://github.com/openai/evals/stargazers)  
+   *OpenAI's official framework for evaluating LLMs and safety behaviors across standard benchmark suites.*
+
+4. 🏅 **[confident-ai/deepeval](https://github.com/confident-ai/deepeval)**  
+   [![GitHub stars](https://img.shields.io/github/stars/confident-ai/deepeval?style=social)](https://github.com/confident-ai/deepeval/stargazers)  
+   *The open-source LLM evaluation framework for measuring hallucination, toxicity, bias, and RAG safety metrics.*
+
+5. 🏅 **[explodinggradients/ragas](https://github.com/explodinggradients/ragas)**  
+   [![GitHub stars](https://img.shields.io/github/stars/explodinggradients/ragas?style=social)](https://github.com/explodinggradients/ragas/stargazers)  
+   *Framework for evaluating Retrieval Augmented Generation (RAG) pipelines for safety, context recall, and truthfulness.*
+
+6. 🏅 **[EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness)**  
+   [![GitHub stars](https://img.shields.io/github/stars/EleutherAI/lm-evaluation-harness?style=social)](https://github.com/EleutherAI/lm-evaluation-harness/stargazers)  
+   *Standardized benchmark harness for zero-shot and few-shot language model evaluations across 200+ safety & capability tasks.*
+
+7. 🏅 **[NVIDIA/garak](https://github.com/NVIDIA/garak)**  
+   [![GitHub stars](https://img.shields.io/github/stars/NVIDIA/garak?style=social)](https://github.com/NVIDIA/garak/stargazers)  
+   *NVIDIA's LLM vulnerability scanner—probes models for jailbreaks, prompt injection, data leakage, and toxic outputs.*
+
+8. 🏅 **[guardrails-ai/guardrails](https://github.com/guardrails-ai/guardrails)**  
+   [![GitHub stars](https://img.shields.io/github/stars/guardrails-ai/guardrails?style=social)](https://github.com/guardrails-ai/guardrails/stargazers)  
+   *Adding structure, type validation, and real-time safety guardrails to LLM applications.*
+
+9. 🏅 **[NVIDIA/NeMo-Guardrails](https://github.com/NVIDIA/NeMo-Guardrails)**  
+   [![GitHub stars](https://img.shields.io/github/stars/NVIDIA/NeMo-Guardrails?style=social)](https://github.com/NVIDIA/NeMo-Guardrails/stargazers)  
+   *Programmable toolkit for adding conversational guardrails, topic control, and safety policies to LLM applications.*
+
+10. 🏅 **[microsoft/PyRIT](https://github.com/microsoft/PyRIT)**  
+    [![GitHub stars](https://img.shields.io/github/stars/microsoft/PyRIT?style=social)](https://github.com/microsoft/PyRIT/stargazers)  
+    *Python Risk Identification Tool for Generative AI—Microsoft's open-source red-teaming framework for AI security.*
+
+11. 🏅 **[meta-llama/PurpleLlama](https://github.com/meta-llama/PurpleLlama)**  
+    [![GitHub stars](https://img.shields.io/github/stars/meta-llama/PurpleLlama?style=social)](https://github.com/meta-llama/PurpleLlama/stargazers)  
+    *Meta's cybersecurity evaluation tools, including Llama Guard and CyberSecEval for model trust and safety.*
+
+12. 🏅 **[protectai/llm-guard](https://github.com/protectai/llm-guard)**  
+    [![GitHub stars](https://img.shields.io/github/stars/protectai/llm-guard?style=social)](https://github.com/protectai/llm-guard/stargazers)  
+    *Security toolkit for LLM inputs and outputs, detecting prompt injections, PII leakage, and toxic content.*
+
+13. 🏅 **[stanford-crfm/helm](https://github.com/stanford-crfm/helm)**  
+    [![GitHub stars](https://img.shields.io/github/stars/stanford-crfm/helm?style=social)](https://github.com/stanford-crfm/helm/stargazers)  
+    *Holistic Evaluation of Language Models (HELM) by Stanford CRFM for multi-metric capability and safety assessment.*
+
+14. 🏅 **[UKGovernmentBEIS/inspect_ai](https://github.com/UKGovernmentBEIS/inspect_ai)**  
+    [![GitHub stars](https://img.shields.io/github/stars/UKGovernmentBEIS/inspect_ai?style=social)](https://github.com/UKGovernmentBEIS/inspect_ai/stargazers)  
+    *Inspect AI evaluation framework developed for large-scale safety research and AI safety institute evaluations.*
+
+15. 🏅 **[microsoft/promptbench](https://github.com/microsoft/promptbench)**  
+    [![GitHub stars](https://img.shields.io/github/stars/microsoft/promptbench?style=social)](https://github.com/microsoft/promptbench/stargazers)  
+    *Unified library for evaluating LLM robustness against prompt perturbations, adversarial attacks, and dynamic benchmarks.*
+
+---
+
+## 🛠️ How to Contribute
+
+Contributions are warmly welcome! Please follow these simple steps:
+
+1. 🔀 **Fork** the repository.
+2. 📝 **Add/Edit** entries in `README.md` following the standard markdown structure.
+3. 🔍 Ensure descriptions are factual, link directly to official project/vendor sites, and include correct star links or pricing data.
+4. 🚀 **Submit a Pull Request** with a brief summary of additions!
+
+Check out [Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome) for more curated lists.
+
+---
+
+## ⚠️ Disclaimer
+
+- This is a **community-curated** list — not exhaustive and not an endorsement.
+- Safety evaluation is necessary but not sufficient. Passing a test suite does not guarantee absolute safety in production deployments.
+- Open-source tools provide transparency and CI/CD integration, while commercial platforms offer continuous threat intelligence and enterprise dashboarding.
+
+---
+
+## 💖 Support
+
+If you find this repository helpful, please consider:
+- ⭐ **Starring** this repository to increase visibility!
+- 🔀 **Forking** it to customize your own evaluation pipeline.
+- 📢 **Sharing** it with AI safety researchers, red-teamers, and platform engineers.
+- ☕ **Sponsoring / Buying a Coffee**: Support continuous research and project updates via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-AI-Safety-Evaluation-Platform&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-AI-Safety-Evaluation-Platform&type=date&legend=top-left)

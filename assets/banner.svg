@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="50%" stop-color="#121829"/>
+      <stop offset="100%" stop-color="#1a0b2e"/>
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="accent-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+
+    <linearGradient id="accent-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7f00ff"/>
+      <stop offset="100%" stop-color="#e100ff"/>
+    </linearGradient>
+
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+
+    <!-- Dynamic Glow Filters -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="glow-purple" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="cyber-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="1" stroke-opacity="0.6"/>
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.4; transform: scale(1); }
+      50% { opacity: 0.8; transform: scale(1.08); }
+    }
+    @keyframes scanLine {
+      0% { transform: translateY(0px); opacity: 0.2; }
+      50% { opacity: 0.8; }
+      100% { transform: translateY(360px); opacity: 0.2; }
+    }
+    @keyframes floatParticle {
+      0%, 100% { transform: translateY(0px) translateX(0px); }
+      50% { transform: translateY(-15px) translateX(10px); }
+    }
+    @keyframes wavePath {
+      0% { d: path('M -100 280 Q 200 240 500 290 T 1100 260 T 1400 300 L 1400 360 L -100 360 Z'); }
+      50% { d: path('M -100 290 Q 250 310 550 260 T 1150 290 T 1400 270 L 1400 360 L -100 360 Z'); }
+      100% { d: path('M -100 280 Q 200 240 500 290 T 1100 260 T 1400 300 L 1400 360 L -100 360 Z'); }
+    }
+
+    .bg-grid { fill: url(#cyber-grid); }
+    .pulse-orb-1 { animation: pulseGlow 6s ease-in-out infinite; transform-origin: 150px 100px; }
+    .pulse-orb-2 { animation: pulseGlow 8s ease-in-out infinite reverse; transform-origin: 1050px 260px; }
+    .scanner { animation: scanLine 7s linear infinite; }
+    .particle { animation: floatParticle 5s ease-in-out infinite; }
+    .animated-wave { animation: wavePath 10s ease-in-out infinite; }
+    .title-text { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-weight: 800; font-size: 42px; fill: url(#text-grad); letter-spacing: -0.5px; }
+    .subtitle-text { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-weight: 500; font-size: 18px; fill: #94a3b8; }
+    .badge-text { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-weight: 700; font-size: 13px; fill: #38bdf8; letter-spacing: 1.5px; text-transform: uppercase; }
+  </style>
+
+  <!-- Base Layer -->
+  <rect width="1200" height="360" fill="url(#bg-grad)" rx="16"/>
+  <rect width="1200" height="360" class="bg-grid" rx="16"/>
+
+  <!-- Dynamic Animated Background Elements (Behind Foreground Content) -->
+  <g class="pulse-orb-1">
+    <circle cx="150" cy="100" r="140" fill="#00f2fe" opacity="0.15" filter="url(#glow-cyan)"/>
+  </g>
+  <g class="pulse-orb-2">
+    <circle cx="1050" cy="260" r="160" fill="#7f00ff" opacity="0.2" filter="url(#glow-purple)"/>
+  </g>
+
+  <!-- Scanning Line -->
+  <line x1="0" y1="0" x2="1200" y2="0" stroke="url(#accent-cyan)" stroke-width="2" class="scanner" opacity="0.5"/>
+
+  <!-- Geometric Decorative Lines -->
+  <path class="animated-wave" d="M -100 280 Q 200 240 500 290 T 1100 260 T 1400 300 L 1400 360 L -100 360 Z" fill="#00f2fe" opacity="0.08"/>
+
+  <!-- Node Grid Connectivity Dots -->
+  <g class="particle" opacity="0.7">
+    <circle cx="220" cy="80" r="4" fill="#38bdf8"/>
+    <circle cx="980" cy="120" r="5" fill="#c084fc"/>
+    <circle cx="850" cy="280" r="3" fill="#38bdf8"/>
+    <line x1="220" y1="80" x2="290" y2="120" stroke="#38bdf8" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+    <line x1="980" y1="120" x2="910" y2="180" stroke="#c084fc" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+  </g>
+
+  <!-- Foreground Content Container (Guaranteed Sharp & Visible) -->
+  <g transform="translate(70, 75)">
+    <!-- Category Badge -->
+    <rect x="0" y="0" width="240" height="32" rx="16" fill="#0f172a" stroke="#0284c7" stroke-width="1.5"/>
+    <text x="120" y="21" class="badge-text" text-anchor="middle">🛡️ AI SAFETY &amp; SECURITY</text>
+
+    <!-- Main Title -->
+    <text x="0" y="92" class="title-text" filter="drop-shadow(0px 4px 12px rgba(0,0,0,0.5))">Awesome AI Safety Evaluation Platform</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="132" class="subtitle-text">Curated Directory of LLM Red Teaming, Guardrails, Vulnerability Scanners &amp; Benchmarks</text>
+
+    <!-- Feature Tags -->
+    <g transform="translate(0, 162)">
+      <!-- Tag 1 -->
+      <rect x="0" y="0" width="165" height="30" rx="8" fill="#1e293b" stroke="#334155"/>
+      <text x="82" y="19" font-family="'Segoe UI', sans-serif" font-size="13" fill="#cbd5e1" text-anchor="middle">🔍 LLM Red Teaming</text>
+
+      <!-- Tag 2 -->
+      <rect x="177" y="0" width="165" height="30" rx="8" fill="#1e293b" stroke="#334155"/>
+      <text x="260" y="19" font-family="'Segoe UI', sans-serif" font-size="13" fill="#cbd5e1" text-anchor="middle">⚡ Jailbreak Testing</text>
+
+      <!-- Tag 3 -->
+      <rect x="354" y="0" width="175" height="30" rx="8" fill="#1e293b" stroke="#334155"/>
+      <text x="441" y="19" font-family="'Segoe UI', sans-serif" font-size="13" fill="#cbd5e1" text-anchor="middle">📊 Risk Assessment</text>
+
+      <!-- Tag 4 -->
+      <rect x="541" y="0" width="175" height="30" rx="8" fill="#1e293b" stroke="#334155"/>
+      <text x="628" y="19" font-family="'Segoe UI', sans-serif" font-size="13" fill="#cbd5e1" text-anchor="middle">🛡️ Continuous Guardrails</text>
+    </g>
+  </g>
+</svg>
